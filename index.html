@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+     
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Syne:wght@600&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/mobiscroll.javascript.min.js"></script>
+    <script src='script.js'></script>
+    <link href="css/mobiscroll.javascript.min.css" rel="stylesheet" type="text/css">
+
+     
+
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <div class="container">
+            <img src="images/luggagebagtravelhandbagclaim_109680.png" id="nav-png">
+            <a href="#" class="navbar-brand fs-1">Safe Travels</a>
+
+            <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-menu"
+            aria-controls="navbar-menu"
+            aria-expanded="false" aria-label="toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item">
+                        <a href="#locations" class="nav-link">LOCATIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">LOGIN</a>
+                    </li>
+                </ul>
+                <div class="container-fluid-search">
+                  <form class="d-flex">
+                    <button class="btn btn-outline-success" type="submit">BOOK NOW</button>
+                  </form>
+                </div>
+            </div> 
+        </div>
+    </nav>
+
+    <div id="hero-carousel" class="carousel slide slider" data-bs-ride="carousel">
+        <div class="carousel-inner ">
+          <div class="carousel-item active c-item">
+            <img src="images/pexels-pixabay-55821.jpg" class="d-block w-100 carousel-img" alt="...">
+            <div class="carousel-caption text-center d-md-block showcase">
+              <h1 class="d-sm-flex fw-bolder header">Journey The World Safely</h1>
+              <p class="mt-4 carousel-paragraph">Here at Safe Travels, we want to enure that 
+                clients have the experience of their lives.
+                We guarantee a safe, comfortable, and 
+                luxurious stay in various locations around the world. Click below 
+                to to learn more about what we here at Safe Travels has to offer.</p>
+                <button class="btn btn-lg btn-sm btn-learn-more">Learn More</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <section class="py-5 p-lg-4 text-dark text-sm-center headcase">
+        <div class="container">
+            <div class="d-block py-5 align-items-center">
+                <h1 class="fw-bolder" id="headcase-caption">The World is Yours!</h1>
+                <p class="lead mt-3 fs-5">Stay one night or one week. It doesnt matter,
+                    Safe Travels will help to choose the right location 
+                    for you. Look below at the locations we offer and 
+                    see where you would like to take your next adventure.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tour-search">
+      <div class="container">
+        <form action="" class="tour-form">
+          <div class="input-wrapper">
+            <label for="destination" class="input-label">Destination</label>
+            <input type="text" class="input-field" id="destination"  name="destination"  required placeholder="Search Destination">
+          </div>
+          <div class="input-wrapper">
+            <label for="people" class="input-label">Number of People</label>
+            <input type="number" class="input-field"  id="people" name="people"  required placeholder="No. of People">
+          </div>
+          <div class="input-wrapper">
+            <label for="check-in" class="input-label">Check-in Date</label>
+            <input type="date" class="input-field"  id="checkin" name="checkin" required>
+          </div>
+          <div class="input-wrapper">
+            <label for="check-out" class="input-label">Check-out Date</label>
+            <input type="date" class="input-field"  id="checkout" name="checkout" required>
+          </div>
+          <div class="col-md-2 py-2 book-now-btn" id="book-now-btn">
+            <button class="btn btn book-btn w-100 book-now-button">Book Now</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="pt-md-5" id="locations">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="images/pexels-pixabay-372470.jpg" class="card-img-top" alt="london">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">
+                  <ion-icon name="location-outline"></ion-icon>
+                  London
+                </h5>
+                <p class="card-text">Come and explore the world famous city of London. Click below to explore your options.</p>
+                <a href="locations.html" class="btn btn-explore">Explore</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="images/pexels-reynaldo-brigworkz-brigantty-771881.jpg" class="card-img-top" alt="new york">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">
+                  <ion-icon name="location-outline"></ion-icon>
+                  New York
+                </h5>
+                <p class="card-text">The city that never sleeps. Click below to explore your options.</p>
+                <a href="locations.html" class="btn btn-explore">Explore</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="images/pexels-matthew-leland-974212.jpg" class="card-img-top" alt="hawaii">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">
+                  <ion-icon name="location-outline"></ion-icon>
+                  Hawaii
+                </h5>
+                <p class="card-text">Everyone's favorite bucket list paradise. Click below to explore your options.</p>
+                <a href="locations.html" class="btn btn-explore">Explore</a>
+              </div>
+            </div>
+          </div>
+          
+          <p class="d-flex justify-content-center py-3">
+            <button class="btn btn-collapse align-items-center" type="button" data-bs-toggle="collapse" 
+            data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">View More!</button>
+          </p>
+          <div class="row gy-3">
+            <div class="col-lg-4">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card bg-dark text-white">
+                  <img src="images/morocco.jpg" class="card-img" alt="morocco">
+                  <div class="card-img-overlay">
+                    <h5 class="location-title" id="location">Explore Morocco</h5>
+                    <p class="location-text py-5">
+                      <ion-icon name="location-outline"></ion-icon>
+                      Morocco, Africa
+                    </p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card bg-dark text-white">
+                  <img src="images/indonesia.jpg" class="card-img" alt="indonesia">
+                  <div class="card-img-overlay">
+                    <h5 class="location-title" id="location">Explore Indonesia</h5>
+                    <p class="location-text py-5">
+                      <ion-icon name="location-outline"></ion-icon>
+                      Jakarta, Indonesia
+                    </p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card bg-dark text-white">
+                  <img src="images/switzerland.jpg" class="card-img" alt="switzerland">
+                  <div class="card-img-overlay">
+                    <h5 class="location-title" id="location">Explore Switzerland</h5>
+                    <p class="location-text py-5">
+                      <ion-icon name="location-outline"></ion-icon>
+                      Gadmen, Switzerland
+                    </p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card bg-dark text-white">
+                  <img src="images/australia.jpg" class="card-img" alt="australia">
+                  <div class="card-img-overlay">
+                    <h5 class="location-title" id="location">Explore Australia</h5>
+                    <p class="location-text py-5">
+                      <ion-icon name="location-outline"></ion-icon>
+                      Sydney, Australia
+                    </p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card bg-dark text-white">
+                  <img src="images/south africa.jpg" class="card-img" alt="south africa">
+                  <div class="card-img-overlay">
+                    <h5 class="location-title" id="location">Explore South Africa</h5>
+                    <p class="location-text py-5">
+                      <ion-icon name="location-outline"></ion-icon>
+                      Cape Town, South Africa
+                    </p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card bg-dark text-white">
+                  <img src="images/arkansas.jpg" class="card-img" alt="arkansas">
+                  <div class="card-img-overlay">
+                    <h5 class="location-title" id="location">Explore Alaska</h5>
+                    <p class="location-text py-5">
+                      <ion-icon name="location-outline"></ion-icon>
+                      Alaska, USA
+                    </p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card bg-dark text-white d-flex flex-column">
+                  <img src="images/greece.jpg" class="card-img" alt="greece">
+                  <div class="card-img-overlay">
+                    <h5 class="location-title" id="location">Explore Greece</h5>
+                    <p class="location-text py-5">
+                      <ion-icon name="location-outline"></ion-icon>
+                      Santorini, Greece
+                    </p>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer-review-section mt-5 py-5" id="review-section">
+      <div class="container">
+        <h1 class="dont-believe-us fw-bolder">
+          Don't take our word for it!
+          <p class="review-paragraph lead mt-6 py-3 col-md-7 fs-4">
+            We understand customer skepticism, especially when it comes to smaller travel experts such
+            as ourselves. Here at safe travels, we let our customers speak for us. See what our customers have to say.
+          </p>
+        </h1>
+      </div>
+
+      <div class="Scroller">
+        <div class=" tag-list Inner-scroller">
+            <div class="col-sm-6 col-md-3">
+              <div class="card text-center testimonial-card-1">
+                <div class="card-body">
+                  <p class="card-text">"The customer service was outstanding. The staff was attentive, friendly, and went above and beyond to help me with my queries. Great experience!"</p>
+                  <h5 class="card-titles">Damon</h5>
+                  <h5 class="card-titles">San Antonio</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="card text-center testimonial-card-2">
+                <div class="card-body">
+                  <p class="card-text">"The hotel exceeded my expectations. The room was spacious and clean, and the staff was friendly and accommodating. I had a fantastic stay and would highly recommend this place."</p>
+                  <h5 class="card-titles">Eric</h5>
+                  <h5 class="card-titles">Toronto</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="card text-center testimonial-card-3">
+                <div class="card-body">
+                  <p class="card-text">"I absolutely loved the product! It exceeded my expectations in terms of quality and functionality. I highly recommend it to everyone."</p>
+                  <h5 class="card-titles">Mary</h5>
+                  <h5 class="card-titles">South London</h5>
+                </div>
+              </div>
+            </div>
+          <!-- Repeat the above divs for more items -->
+            <div class="col-sm-6 col-md-3">
+              <div class="card text-center testimonial-card-4">
+                <div class="card-body">
+                  <p class="card-text">"I had a fantastic time at this hotel. The room had a stunning view, and the breakfast buffet was delicious. The hotel's location was convenient for exploring the city. I would definitely stay here again."</p>
+                  <h5 class="card-titles">Will</h5>
+                  <h5 class="card-titles">Peru</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="card text-center testimonial-card-1">
+                <div class="card-body">
+                  <p class="card-text">"The customer service was outstanding. The staff was attentive, friendly, and went above and beyond to help me with my queries. Great experience!"</p>
+                  <h5 class="card-titles">Damon</h5>
+                  <h5 class="card-titles">San Antonio</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="card text-center testimonial-card-2">
+                <div class="card-body">
+                  <p class="card-text">"The hotel exceeded my expectations. The room was spacious and clean, and the staff was friendly and accommodating. I had a fantastic stay and would highly recommend this place."</p>
+                  <h5 class="card-titles">Eric</h5>
+                  <h5 class="card-titles">Toronto</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="card text-center testimonial-card-3">
+                <div class="card-body">
+                  <p class="card-text">"I absolutely loved the product! It exceeded my expectations in terms of quality and functionality. I highly recommend it to everyone."</p>
+                  <h5 class="card-titles">Mary</h5>
+                  <h5 class="card-titles">South London</h5>
+                </div>
+              </div>
+            </div>
+          <!-- Repeat the above divs for more items -->
+            <div class="col-sm-6 col-md-3">
+              <div class="card text-center testimonial-card-4">
+                <div class="card-body">
+                  <p class="card-text">"I had a fantastic time at this hotel. The room had a stunning view, and the breakfast buffet was delicious. The hotel's location was convenient for exploring the city. I would definitely stay here again."</p>
+                  <h5 class="card-titles">Will</h5>
+                  <h5 class="card-titles">Peru</h5>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+
+
+    <section class="gallery" id="gallery">
+      <div class="container" id="gallery-container">
+        <p class="section-subtitle">Tourist Gallery</p>
+        <h2 class="h2-section-subtitle">Customer Photo's</h2>
+
+        <p class="section-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Veritatis laudantium ullam odio veniam autem dolor, ea debitis libero ipsum cumque sit consequuntur commodi quis ex 
+          amet deserunt molestias maiores architecto natus sed vitae nisi? 
+          Alias, dolorem quos asperiores repudiandae reiciendis libero placeat repellendus culpa earum fuga dolore nihil, optio illo.
+        </p>
+
+        <ul class="gallery-list">
+          <li class="gallery-item">
+            <figure class="gallery-image">
+              <img src="images/pexels-elle-hughes-1680173 (1).jpg" class="img" alt="gallery-img">
+            </figure>
+          </li>
+          <li class="gallery-item">
+            <figure class="gallery-image">
+              <img src="images/pexels-paulo-marcelo-martins-2412606.jpg" class="img" alt="gallery-img">
+            </figure>
+          </li>
+          <li class="gallery-item">
+            <figure class="gallery-image">
+              <img src="images/pexels-hisham-zayadneh-5749562.jpg" class="img" alt="gallery-img">
+            </figure>
+          </li>
+          <li class="gallery-item">
+            <figure class="gallery-image">
+              <img src="images/pexels-ben-mack-6775235.jpg" class="img" alt="gallery-img">
+            </figure>
+          </li>
+          <li class="gallery-item">
+            <figure class="gallery-image">
+              <img src="images/pexels-nataliya-vaitkevich-5291510.jpg" class="img" alt="gallery-img">
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <footer class="text-light pt-5 pb-4 footer-box" id="contact">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-light text-uppercase mb-4 font-weight-bold text-info">About Us</h5>
+            <hr class="md-4">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam minus adipisci hic architecto dolores vero.</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-light text-uppercase mb-4 font-weight-bold text-info">Company</h5>
+            <hr class="md-4">
+            <p>
+              <a href="#" class="text-light" style="text-decoration:none">News</a>
+            </p>
+            <p>
+              <a href="#" class="text-light" style="text-decoration:none">Careers</a>
+            </p>
+            <p>
+              <a href="#" class="text-light" style="text-decoration:none">Business</a>
+            </p>
+            <p>
+              <a href="#" class="text-light" style="text-decoration:none">More Info</a>
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-light text-uppercase mb-4 font-weight-bold text-info">Support</h5>
+            <hr class="md-4">
+            <p>
+              <a href="#" class="text-light" style="text-decoration:none">Your Account</a>
+            </p>
+            <p>
+              <a href="#" class="text-light" style="text-decoration:none">Your Purchases</a>
+            </p>
+            <p>
+              <a href="#" class="text-light" style="text-decoration:none">Help Center</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-light text-uppercase mb-4 font-weight-bold text-info">Contact</h5>
+            <hr class="md-4">
+            <p>
+              <li class="fas fa-home mx-auto"></li>Jacksonville Fl 0595, US
+            </p>
+            <p>
+              <li class="fas fa-envelope mr-5"></li>safetravels@gmail.com
+            </p>
+            <p>
+              <li class="fas fa-phone mr-5"></li>(904) 5555555
+            </p>
+            <p>
+              <li class="fas fa-print mr-5"></li>+904 5555555
+            </p>
+            
+          </div>
+
+          <hr class="mb-4">
+          <div class="row d-flex justify-content-center">
+            <div>
+              <p>
+                Copyright &copy;2023 All Rights Reserved By :
+                <a href="#" style="text-decoration:none;">
+                  <strong class="text-light text-info">Safe Travels</strong>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="text-center">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-light"><i class="fab fa-google-plus"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </footer> 
+    
+    <script>
+        // Get the input elements
+      const startDateInput = document.getElementById('startingDate');
+      const endDateInput = document.getElementById('endingDate');
+
+      // Add event listeners to update the min and max attributes
+      startDateInput.addEventListener('change', function() {
+        endDateInput.min = startDateInput.value;
+      });
+
+      endDateInput.addEventListener('change', function() {
+        startDateInput.max = endDateInput.value;
+      });
+    </script>
+</body>
+</html>

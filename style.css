@@ -1,0 +1,629 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Syne', sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0% 5%;
+  }
+
+  .c-item {
+    height: 780px;
+  }
+
+  .carousel-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+  }
+
+.header {
+  padding-top: 6%;
+  font-size: 70px;
+  justify-content: center;
+}
+
+.showcase {
+  top: 30%;
+  left: 10%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.carousel-paragraph {
+  margin-bottom: 1rem;
+  font-size: 23px;
+}
+
+.btn-learn-more {
+  color: white;
+  text-transform: uppercase;
+  border-radius: 100px;
+  background-color: #032030;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 0 0;
+}
+
+.btn-learn-more:hover {
+  background-color: #273469;
+}
+
+#nav-png {
+  height: 5%;
+  width: 5%;
+  position: relative;
+  margin-inline-end: 32px;
+}
+
+.navbar-expand-lg {
+  background-color: #f2f2f2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-collapse {
+  position: static;
+}
+
+.navbar-nav {
+  margin: 0 9% 0 9%;
+  font-size: 19px;
+}
+
+.container-fluid-search {
+  display: flex;
+}
+
+.btn-outline-success {
+  color: white;
+  background-color: #032030;
+  border-radius: 20px;
+  padding: 9px 26px;
+}
+
+.btn-outline-success:hover {
+  background-color: #273469;
+}
+
+.headcase {
+  background: #221E22;
+}
+
+#headcase-caption{
+  font-size: 4rem;
+}
+
+.tour-search {
+  background: #336699;
+  margin-top: -30px;
+  margin-bottom: 40px;
+}
+
+.tour-form {
+  justify-content: center;
+}
+
+.tour-form .input-label {
+  display: flex;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
+
+.tour-form .input-field {
+  background: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 50px;
+  margin-bottom: 54px;
+  border-color: transparent;
+}
+
+.tour-form .input-wrapper {
+  padding: 0;
+}
+
+.container {
+  color: white;
+}
+
+.tour-search .book-now-button{
+  display: block;
+  margin-right: 20px;
+  margin-bottom: 52px;
+  padding: 12px 0;
+  border-radius: 20px;
+  color: white;
+}
+
+
+
+.card-title {
+  color: white;
+}
+
+.card-text {
+  color: white;
+  font-size: 15px;
+}
+
+.location-icon {
+  position: absolute;
+  bottom: 36px;
+  left: 30px;
+}
+
+.btn-explore {
+  background-color: #000000;
+  color: white;
+}
+
+.book-btn {
+  background-color: #032030;
+}
+
+.book-btn:hover {
+  background-color: #273469;
+  color: #fff;
+}
+
+.card-title ion-icon {
+  margin-right: 0.2rem;
+  margin-top: 0.3rem;
+}
+
+.btn-collapse {
+  font-weight: 600;
+  position: relative;
+  width: fit-content;
+  padding-right: 30px;
+  padding-left: 30px ;
+  top: 20px;
+  height: 65px;
+  background-color: #032030;
+  border-radius: 200px;
+  color: white;
+}
+
+.card-img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.card:hover .card-img{
+  transform: scale(1.0);
+}
+
+
+.btn-collapse:hover {
+  background-color: #273469;
+  color: #fff;
+}
+
+.location-title {
+  position: absolute;
+  top: 30%;
+}
+
+#location {
+  font-size: 40px;
+}
+
+.location-text {
+  position: relative;
+  top: 70%;
+}
+
+.customer-review-section {
+  background-color: #2F4858;
+}
+
+
+.testimonial-card-1 {
+  padding-top: 8%;
+  padding-bottom: 10%;
+  margin-left: 10%;
+  width: 100%;
+  height: 100%;
+  background-color: #336699
+}
+.testimonial-card-2 {
+  padding-top: 8%;
+  padding-bottom: 10%;
+  margin-left: 10%;
+  width: 100%;
+  height: 100%;
+  background-color: #336699
+}
+.testimonial-card-3 {
+  padding-top: 8%;
+  padding-bottom: 10%;
+  margin-left: 10%;
+  width: 100%;
+  height: 100%;
+  background-color: #336699
+}
+.testimonial-card-4 {
+  padding-top: 8%;
+  padding-bottom: 10%;
+  margin-left: 10%;
+  width: 100%;
+  height: 100%;
+  background-color: #336699
+}
+
+.card-title {
+  color: #fff;
+}
+
+.card-text {
+  color: #fff;
+}
+
+.rounded-circle {
+  width: 35%;
+  height: 35%;
+  position: relative;
+  left: 30%;
+  margin-top: 5%;
+}
+
+.review-container {
+  margin-top: 15%;
+}
+
+.Scroller {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.Scroller:before,
+.Scroller:after {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  top: 0;
+  content: "";
+  z-index: 2;
+}
+
+.Scroller:before {
+  background: linear-gradient(to left, rgb(255, 255, 255, 0), black);
+  left: 0;
+}
+
+.Scroller:after {
+  background: linear-gradient(to right, rgb(255, 255, 255, 0), black);
+  right: 0;
+}
+
+
+.Inner-scroller {
+  display: flex;
+  gap: 0.7rem;
+  animation: scroll 12s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-103%);
+  }
+}
+
+.card-titles {
+  text-align: start;
+  position: relative;
+  color: #fff;
+  line-height: 1;
+  top: 20%;
+}
+.text-center .card-text {
+  display: block;
+  text-align: start;
+  flex-grow: 1;  
+}
+
+.text-center .card-body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding-top: 2%;
+}
+
+.section-subtitle {
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+  margin-top: 4%;
+}
+
+.h2-section-subtitle {
+  font-size: 56px;
+  font-weight: 600;
+  color: #336699;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.section-text {
+  display: block;
+  font-size: 17px;
+  color: #2F4858;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.gallery {
+  padding-block: 1rem;
+}
+
+.gallery-container {
+  overflow: hidden;
+}
+
+.gallery-list {
+  display: flex;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  margin-bottom: 8%;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15%;
+}
+
+.gallery-item:nth-child(3) {
+  grid-area: 1 / 2 / 3 / 3;
+}
+
+.gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-image:hover  .img {
+  transform: scale(1.3);
+}
+
+.footer-box {
+  border-top-left-radius: 125px;
+  background-color: #221E22;
+}
+
+@media (max-width: 400px) {
+  .showcase {
+    top: 10%;
+  }
+  
+}
+
+@media (max-width: 475px) {
+  .showcase {
+    padding-top: 0%;
+    top: 22%;
+  }
+  .header {
+    font-size: 1.5rem;
+  }
+  
+  .btn-learn-more {
+    display: block;
+    align-items: center;
+    border-radius: 30px;
+    width: 200%;
+    height: 60px;
+  }
+  .carousel-paragraph {
+    margin-bottom: 0.5rem;
+  }
+  .carousel-paragraph {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .Scroller:before,
+  .Scroller:after {
+    background: none;
+  }
+
+  .Inner-scroller {
+    animation: none;
+    display: block;
+    width: 85%;
+  }
+
+  .card-titles {
+    top: 3%;
+  }
+}
+
+
+
+@media (min-width: 580px) {
+
+  #book-now-btn {
+    position: relative;
+  }
+
+ .container {
+    margin-inline: auto;
+  }
+
+  .tour-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    gap: 15px;
+  }
+
+  .tour-form .input-wrapper { margin-bottom: 0; }
+
+  .tour-form .input-field { padding: 16px 20px; }
+}
+
+@media (max-width: 640px) {
+
+  .review-paragraph {
+    font-size: 8px;
+  }
+
+  .header {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+
+
+  .card-text {
+    font-size: 12px;
+  }
+
+  .card-titles {
+    top: 11%;
+    font-size: 16px;
+    line-height: 0.8;
+  }
+
+
+  .btn-learn-more {
+    display: inline-block;
+    width: 10rem;
+    height: 3rem;
+  }
+
+  .h2-section-subtitle {
+    font-size: 46px;
+  }
+
+  .section-text {
+    font-size: 15px;
+  }
+
+  .gallery-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
+
+@media (min-width: 768px) {
+
+.tour-search .container {
+  max-width: 800px;
+}
+
+  .card-titles {
+    top: 10%;
+  }
+
+  .btn-learn-more {
+    font-size: 1rem;
+    display: inline-block;
+    align-items: center;
+    border-radius: 30px;
+    width: 11rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .input-label {
+    margin-right: 14px;
+  }
+
+  .tour-search .tour-form {
+      display: grid;
+  }
+
+  .tour-form .input-wrapper {
+    padding-top: 20px;
+    padding-bottom: -10px;
+  }
+
+  .input-wrapper #destination {
+    width: 95%;
+  }
+
+  .input-wrapper #people {
+    width: 95%;
+  }
+
+  .input-wrapper #checkin {
+    width: 95%;
+  }
+  .input-wrapper #checkout {
+    width: 95%;
+  }
+
+  #book-now-btn {
+    left: 60%;
+    width: 80%;
+  }
+
+  .navbar-nav {
+    font-size: 16px;
+  }
+
+  .container-fluid-search {
+    margin: 0 0 0 52px;
+  }
+
+  .location-text {
+    top: 60%;
+  }
+
+  #location {
+    font-size: 36px;
+    top: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tour-form {
+    display: flex;
+  }
+
+  #location {
+    font-size: 40px;
+  }
+}
